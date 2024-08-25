@@ -326,7 +326,7 @@ savebtn=Button(btnFrame,text='Save',bg='black',fg='white',font=('arial',15,'bold
 savebtn.grid(row=0,column=2,padx=5,pady=14)
 clearbtn=Button(btnFrame,text='Clear',bg='black',fg='white',font=('arial',15,'bold'),width=10,command=mainclear)
 clearbtn.grid(row=0,column=3,padx=5,pady=14)
-exitbtn=Button(btnFrame,text='Exit',bg='black',fg='white',font=('arial',15,'bold'),width=10,command=exit)
+exitbtn=Button(btnFrame,text='Exit',bg='black',fg='white',font=('arial',15,'bold'),width=10,command="root.destroy()")
 exitbtn.grid(row=0,column=4,padx=5,pady=14)
 
 btnFrame.grid(row=0,column=5,rowspan=3,padx=30)
