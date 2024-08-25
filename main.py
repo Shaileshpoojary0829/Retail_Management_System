@@ -16,7 +16,7 @@ def savefile():
   bill_content=textarea.get(1.0,END)
   bill=messagebox.askyesno("CONFIRM","Do you really want to save the bill?")
   if(bill):
-    file=open(f"{billno}.pdf",'w')
+    file=open(f"{billno}.txt",'w')
     file.write(bill_content)
     messagebox.showinfo("Success","Your Bill saved successfully")
 def generate():
