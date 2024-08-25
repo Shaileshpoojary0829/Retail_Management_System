@@ -59,7 +59,6 @@ def totalbutton():
   try:
       all_entry=g_entry+c_entry+co_entry
       selected_item=any(int(entry.get())>0 for entry in all_entry)
-      print(selected_item)
       if not selected_item:
           messagebox.showerror("ERROR","No Products selected")
           return
